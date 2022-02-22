@@ -1,3 +1,13 @@
+# From the tutorial: "Ben, how do I manage my bbox size?"
+# (link coming soon)
+
+# USAGE
+# 1. Add this .py file to your ~/.nuke directory.
+# 2. In your ~/.nuke/menu.py, add the following line: import example_auto_bbox
+# 3. Start Nuke!
+
+
+
 # --------------------------------------------------------------
 #  example_auto_bbox
 #  Version: 0.1.1
