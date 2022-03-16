@@ -11,6 +11,18 @@ nuke.selectedNode()['icon'].setValue("Blur.png")
 
 
 
+
+
+# Add Menu with icon.
+benmcTools = nuke.menu('Nodes').addMenu('BenMc', icon="bm_icon.png")
+
+# Add Menu item to previously-created menu with icon.
+benmcTools.addCommand('bm_OpticalGlow', 'nuke.createNode("bm_OpticalGlow")', icon="bm_OpticalGlow_icon.png")
+
+
+
+
+
 # Add "Display Image in Node Graph" item in Nuke's Edit menu.
 # This will create a StickyNote the same colour as your node graph, and add a selected image to it.
 
@@ -29,11 +41,3 @@ def create_gui_image():
 
 # Add a menu item to the Edit menu.
 nuke.menu('Nuke').addCommand('Edit/Display Image in Node Graph', 'create_gui_image()')
-
-
-
-# Add Menu with icon.
-benmcTools = nuke.menu('Nodes').addMenu('BenMc', icon="bm_icon.png")
-
-# Add Menu item to previously-created menu with icon.
-benmcTools.addCommand('bm_OpticalGlow', 'nuke.createNode("bm_OpticalGlow")', icon="bm_OpticalGlow_icon.png")
