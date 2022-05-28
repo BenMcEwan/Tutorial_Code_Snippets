@@ -1,5 +1,5 @@
 # From the tutorial: "Ben, how do I manage my bbox size?"
-# (link coming soon)
+# https://youtu.be/vIvOmGkAMP8
 
 # USAGE
 # 1. Add this .py file to your ~/.nuke directory.
@@ -123,5 +123,7 @@ def auto_bbox(speed, overscan_percentage):
 
 
 # Add menu items
-nuke.menu("Nuke").addCommand("Utilities/Optimize bbox (fast)", 'example_auto_bbox.auto_bbox("fast", 10)')
-nuke.menu("Nuke").addCommand("Utilities/Optimize bbox (precise + slow)", 'example_auto_bbox.auto_bbox("precise", 10)')
+python_menu = nuke.menu('Nodes').addMenu("Python", icon="python_icon.png")
+python_menu.addCommand("Bbox Tools/Autocrop", 'nukescripts.autocrop()')
+python_menu.addCommand("Bbox Tools/Optimize bbox (fast)", 'bm_auto_bbox.auto_bbox("fast", 10)')
+python_menu.addCommand("Bbox Tools/Optimize bbox (precise + slow)", 'bm_auto_bbox.auto_bbox("precise", 10)')
