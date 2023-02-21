@@ -10,7 +10,7 @@
 
 # --------------------------------------------------------------
 #  example_auto_bbox
-#  Version: 0.1.1
+#  Version: 0.1.2
 #  Last Updated: February 21st, 2022
 # --------------------------------------------------------------
 
@@ -125,5 +125,5 @@ def auto_bbox(speed, overscan_percentage):
 # Add menu items
 python_menu = nuke.menu('Nodes').addMenu("Python", icon="python_icon.png")
 python_menu.addCommand("Bbox Tools/Autocrop", 'nukescripts.autocrop()')
-python_menu.addCommand("Bbox Tools/Optimize bbox (fast)", 'bm_auto_bbox.auto_bbox("fast", 10)')
-python_menu.addCommand("Bbox Tools/Optimize bbox (precise + slow)", 'bm_auto_bbox.auto_bbox("precise", 10)')
+python_menu.addCommand("Bbox Tools/Optimize bbox (fast)", 'example_auto_bbox.auto_bbox("fast", 10)')
+python_menu.addCommand("Bbox Tools/Optimize bbox (precise + slow)", 'example_auto_bbox.auto_bbox("precise", 10)')
