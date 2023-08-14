@@ -1,3 +1,7 @@
+# Answering a question from the tutorial: "Ben, how do I manage my bbox size?"
+# https://youtu.be/vIvOmGkAMP8
+
+
 # Put this code in your menu.py.
 
 # Always import the nuke module in your menu.py, if you haven't already.
