@@ -1,0 +1,13 @@
+set cut_paste_input [stack 0]
+version 13.0 v5
+push $cut_paste_input
+Crop {
+ box {{(root.width*overscan/100/2)*-1} {(root.height*overscan/100/2)*-1} {root.width+(root.width*overscan/100/2)} {root.height+(root.height*overscan/100/2)}}
+ name Crop_Overscan
+ selected true
+ xpos -477
+ ypos -287
+ addUserKnob {20 Overscan_tab l Overscan}
+ addUserKnob {7 overscan l "overscan %" R 0 50}
+ overscan 10
+}
